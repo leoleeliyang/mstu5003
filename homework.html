@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<htmal lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title>Elaine</title>
+  <style type="text/css">
+     body {
+       line-heigt:24px;
+       font:16px Helvetica, Sans-serif;
+       background: url(images/timg.jpg);
+       /* Serif字体装饰性强，如果很多字段适用；San-serif字体平实，适合字少的页面 */
+       /* 背景图搜索的时候用seamless texture，保存时在 Web Resume文件夹下建立images文件夹，把文件名存成代码中的名字 */
+      }
+
+    /* # is used to target div with custom id */
+    #page-wrap{
+      width: 900px;
+      margin: 40px auto 60px auto;
+      /* margin后面的四个参数是页面的上，右，下，左，reserve some empty space around content */
+    }
+
+    #pic{
+      float:right;
+
+      /* 图片定位，上右下左 */
+    }
+
+/* 标题美化如下，padding是内向距离，margin是外向距离 */
+    h1{
+      color: rgb(6,58,104);
+      margin:0 0 16px 0;
+      padding: 0 0 16px 0;
+      font-size: 42px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      border-bottom: 1px solid #976;
+    }
+
+/* 美化链接如下 */
+     a{
+       border-bottom: 1px dotted;
+       text-decoration: none;
+       color: rgb(255，244，13)；
+     }
+
+     a:hover{
+       border-bottom-style: solid;
+       color: black;
+     }
+
+     ul{
+       margin: 0 0 32px 17px;
+     }
+
+     li{
+       color:rgb(52,5,99);
+     }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- 对body进行美化，先在body的头和尾内加入div和/div -->
+ <div id="page-wrap">
+ <img src="images/profile.jpg" width="335" height="auto" id="pic">
+<!-- 插入图片 -->
+  <h1>Yang</h1>
+  <!--Note: <br/> is for change a line -->
+  <!-- 笔记写完，ctrl+/可以存成自己看的笔记 -->
+  <p>Prtfolio: <a href="http://google.com">sorryIdonthavemyownportfolioyet.com</a><p>
+
+  <br/>Email: <a href="mailto:yl2978@tc.columbia.edu">yl3978@tc.columbia.edu</a>
+    <!-- div 可以当做folder用，没有确定的默认值 -->
+  <div>
+   <h1>Education</h1>
+   <!-- 输入h2，再按tab就会自动生成起始和终止 -->
+   <h2>Columbia University</h2>
+   <p><strong>Major:</strong> Insturtional tech and media<br/>
+       <strong>Minor:</strong> Chinese language and literature
+   </p>
+
+  </div>
+
+  <div>
+  <h1>Skills</h1>
+  <h2>leadership Skills</h2>
+  <p>team leader of Netease</p>
+  <p>president of student union<p>
+
+  <h2>Computer Skills</h2>
+  <p>HTML,CSS,Javascript,C#,Python,MySQL,Max MSP, LOGIC PRO</p>
+  </div>
+
+<div>
+  <h1>Experience</h1>
+  <h2>News editor of Netease</h2>
+  <h3>High school chinese teacher<h3>
+  <ul>
+  <!-- <ul> ul是黑点后的list, ol是序数版list -->
+    <!-- li*3, tab=复制list三遍 -->
+    <li>treat students as my own children</li>
+    <li>hate fake news </li>
+    <li>look much younger than my age</li>
+  </ul>
+
+</div>
+
+  </p>
+
+  </div>
+</body>
+
+</html>
